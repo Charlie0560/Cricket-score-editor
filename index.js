@@ -65,7 +65,6 @@ function odecrement() {
     }
   } else {
     point = 0;
-    over--;
     document.getElementById("pointer").innerHTML = point;
   }
   console.log(main,point);
