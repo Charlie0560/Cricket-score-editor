@@ -5,7 +5,25 @@ let main = 0;
 let point = 0;
 function rincrement() {
   if (run >= 0) {
-    run = run + 1;
+    run++;
+    document.getElementById("run").innerHTML = run;
+  } else {
+    run = 0;
+  }
+  console.log(run);
+}
+function rincrementsix() {
+  if (run >= 0) {
+    run = run + 6;
+    document.getElementById("run").innerHTML = run;
+  } else {
+    run = 0;
+  }
+  console.log(run);
+}
+function rincrementfour() {
+  if (run >= 0) {
+    run = run + 4;
     document.getElementById("run").innerHTML = run;
   } else {
     run = 0;
@@ -61,7 +79,6 @@ function odecrement() {
       point--;
       over--;
       document.getElementById("pointer").innerHTML = point;
-      // document.getElementById("main").innerHTML = main;
     }
   } else {
     point = 0;
